@@ -17,10 +17,10 @@ export const projects = [
     title: "HR virtual assistant",
     description:
       "A recruitment web site and a virtual HR assistance platform my tasks is extraction of CV data (pdf,docx,png), Job management, Recommendation system",
-    image: "/images/jobs.png",
-    image1: "/images/addJOb.png",
-    image2: "/images/details.png",
-    image3: "/images/savedjobs.png",
+    image: "/images/jobs.PNG",
+    image1: "/images/addJOb.PNG",
+    image2: "/images/details.PNG",
+    image3: "/images/savedjobs.PNG",
 
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://github.com/khaoulaarfaoui/PI_HR_HUB",
