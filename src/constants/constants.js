@@ -3,10 +3,10 @@ export const projects = [
     title: "CryptoZone",
     description:
       "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
-    image: "/images/crypto1.png",
-    image1: "/images/crypto2.png",
-    image2: "/images/crypto3.png",
-    image3: "/images/crypto4.png",
+    image: "/images/crypto1.PNG",
+    image1: "/images/crypto2.PNG",
+    image2: "/images/crypto3.PNG",
+    image3: "/images/crypto4.PNG",
 
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://github.com/mehdybenromdhane/Crypto_zone",
@@ -45,10 +45,10 @@ export const projects = [
     title: "Resource Reservation",
     description:
       "Design and development of a resource reservation platform : Establish authentification through JWT (Json Web Token). Role management , development of availabilty mechanism (Calendar), ChatBot and WebSocket.",
-    image: "/images/reserve1.png",
-    image1: "/images/reserve2.png",
+    image: "/images/reserve1.PNG",
+    image1: "/images/reserve2.PNG",
 
-    image2: "/images/reserve4.png",
+    image2: "/images/reserve4.PNG",
 
     tags: ["Mongo", "Express", "React", "Node"],
     source: "#",
