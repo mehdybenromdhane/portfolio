@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "CryptoZone",
     description:
-      "This is a code repository for the corresponding video tutorial. In this video, we will create a full Realtime Chat Application",
+      "Cryptocurrency app, I used React and multiple APIs powered by https://rapidapi.com",
     image: "/images/crypto1.PNG",
     image1: "/images/crypto2.PNG",
     image2: "/images/crypto3.PNG",
