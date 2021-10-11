@@ -57,7 +57,7 @@ export const projects = [
   },
 ];
 
-export const pdf = { image: "images/mehdy_cv.pdf" };
+export const pdf = { image: "images/mehdyCV.pdf" };
 export const certif = [
   { file1: "/images/angular.pdf" },
   { file2: "/images/Bootstrap.pdf" },
