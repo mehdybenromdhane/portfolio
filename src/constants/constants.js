@@ -8,7 +8,7 @@ export const projects = [
     image2: "/images/crypto3.PNG",
     image3: "/images/crypto4.PNG",
 
-    tags: ["Mongo", "Express", "React", "Node"],
+    tags: ["React", "Next.js"],
     source: "https://github.com/mehdybenromdhane/Crypto_zone",
     visit: "https://stormy-shelf-82424.herokuapp.com/",
     id: 0,
@@ -57,7 +57,7 @@ export const projects = [
   },
 ];
 
-export const pdf = { image: "images/mehdyCV.pdf" };
+export const pdf = { image: "images/MehdyCV.pdf" };
 export const certif = [
   { file1: "/images/angular.pdf" },
   { file2: "/images/Bootstrap.pdf" },
