@@ -24,6 +24,7 @@ import {
 import { pic, projects } from "../../constants/constants";
 import Modal from "styled-react-modal";
 import Button from "../../styles/GlobalComponents/Button";
+import Fade from "react-reveal/Fade";
 
 const StyledModal = Modal.styled`
   width: 20rem;
@@ -62,64 +63,68 @@ const Projects = () => {
     <>
       <Section nopadding id="projects">
         <SectionDivider />
-        <SectionTitle main>Projects</SectionTitle>
-        <GridContainer>
-          {projects.map(
-            ({
-              id,
-              image,
-              title,
-              description,
-              tags,
-              source,
-              visit,
-              image2,
-            }) => (
-              <BlogCard key={id}>
-                <Img src={image} onClick={() => toggleModal(id)} />
-                <div onClick={() => toggleModal(id)}>see more</div>
-                <TitleContent>
-                  <HeaderThree title>{title}</HeaderThree>
-                  <Hr />
-                </TitleContent>
-                <CardInfo>{description} </CardInfo>
-                <div>
-                  <br />
-                  <TitleContent> Stack</TitleContent>
-                  <TagList>
-                    {tags.map((tag, i) => (
-                      <Tag key={i}>{tag}</Tag>
-                    ))}
-                  </TagList>
-                </div>
-                <UtilityList>
-                  <ExternalLinks href={visit}>Visit</ExternalLinks>
-                  <ExternalLinks href={source}>Code</ExternalLinks>
-                </UtilityList>
-              </BlogCard>
-            )
-          )}
-          <StyledModal
-            isOpen={isOpen}
-            afterOpen={afterOpen}
-            beforeClose={beforeClose}
-            onBackgroundClick={toggleModal}
-            onEscapeKeydown={toggleModal}
-            opacity={opacity}
-            backgroundProps={{ opacity }}
-          >
-            <Carousel stopOnHover autoPlay>
-              <Cars>
-                {" "}
-                <Img src={projects[ide]?.image} />
-              </Cars>
-              <Img src={projects[ide]?.image1} />
-              <Img src={projects[ide]?.image2} />
-              <Img src={projects[ide]?.image3} />
-            </Carousel>
-            <button onClick={toggleModal}>Close</button>
-          </StyledModal>
-        </GridContainer>
+        <Fade top>
+          <SectionTitle main>Projects</SectionTitle>
+        </Fade>
+        <Fade bottom cascade>
+          <GridContainer>
+            {projects.map(
+              ({
+                id,
+                image,
+                title,
+                description,
+                tags,
+                source,
+                visit,
+                image2,
+              }) => (
+                <BlogCard key={id}>
+                  <Img src={image} onClick={() => toggleModal(id)} />
+                  <div onClick={() => toggleModal(id)}>see more</div>
+                  <TitleContent>
+                    <HeaderThree title>{title}</HeaderThree>
+                    <Hr />
+                  </TitleContent>
+                  <CardInfo>{description} </CardInfo>
+                  <div>
+                    <br />
+                    <TitleContent> Stack</TitleContent>
+                    <TagList>
+                      {tags.map((tag, i) => (
+                        <Tag key={i}>{tag}</Tag>
+                      ))}
+                    </TagList>
+                  </div>
+                  <UtilityList>
+                    <ExternalLinks href={visit}>Visit</ExternalLinks>
+                    <ExternalLinks href={source}>Code</ExternalLinks>
+                  </UtilityList>
+                </BlogCard>
+              )
+            )}
+            <StyledModal
+              isOpen={isOpen}
+              afterOpen={afterOpen}
+              beforeClose={beforeClose}
+              onBackgroundClick={toggleModal}
+              onEscapeKeydown={toggleModal}
+              opacity={opacity}
+              backgroundProps={{ opacity }}
+            >
+              <Carousel stopOnHover autoPlay>
+                <Cars>
+                  {" "}
+                  <Img src={projects[ide]?.image} />
+                </Cars>
+                <Img src={projects[ide]?.image1} />
+                <Img src={projects[ide]?.image2} />
+                <Img src={projects[ide]?.image3} />
+              </Carousel>
+              <button onClick={toggleModal}>Close</button>
+            </StyledModal>
+          </GridContainer>
+        </Fade>
       </Section>
     </>
   );

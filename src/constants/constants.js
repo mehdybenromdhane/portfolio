@@ -1,5 +1,17 @@
 export const projects = [
   {
+    title: "Mehdy Kitchen",
+    description:
+      "Next Kitchen is a dynamic blog 📋.The idea is to build a database of recipes 🍛 for quick recall. the chef can add, alter them or add photos if needed.",
+    image: "/images/capture.PNG",
+    image1: "/images/sanity.PNG",
+
+    tags: ["React", "Next.js", "Sanity CMS", "Vercel"],
+    source: "https://github.com/mehdybenromdhane/next-recipe-app",
+    visit: "https://kitchen-next-app-6m1wfizbp-mehdybenromdhane.vercel.app/",
+    id: 0,
+  },
+  {
     title: "CryptoZone",
     description:
       "Cryptocurrency app, I used React and multiple APIs powered by https://rapidapi.com",
@@ -11,7 +23,7 @@ export const projects = [
     tags: ["React", "Next.js"],
     source: "https://github.com/mehdybenromdhane/Crypto_zone",
     visit: "https://stormy-shelf-82424.herokuapp.com/",
-    id: 0,
+    id: 1,
   },
   {
     title: "HR virtual assistant",
@@ -25,7 +37,7 @@ export const projects = [
     tags: ["Mongo", "Express", "React", "Node"],
     source: "https://github.com/khaoulaarfaoui/PI_HR_HUB",
     visit: "#",
-    id: 1,
+    id: 2,
   },
   {
     title: "E-Commerce",
@@ -39,7 +51,7 @@ export const projects = [
     tags: ["Django", "Python"],
     source: "#",
     visit: "#",
-    id: 2,
+    id: 3,
   },
   {
     title: "Resource Reservation",
@@ -53,11 +65,11 @@ export const projects = [
     tags: ["Mongo", "Express", "React", "Node"],
     source: "#",
     visit: "#",
-    id: 3,
+    id: 4,
   },
 ];
 
-export const pdf = { image: "images/MehdyCV.pdf" };
+export const pdf = { image: "images/CV-Mehdy.pdf" };
 export const certif = [
   { file1: "/images/angular.pdf" },
   { file2: "/images/Bootstrap.pdf" },

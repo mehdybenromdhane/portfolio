@@ -18,6 +18,7 @@ import {
   SectionTitle,
 } from "../../styles/GlobalComponents";
 import { TimeLineData } from "../../constants/constants";
+import Fade from "react-reveal/Fade";
 
 const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
@@ -66,11 +67,14 @@ const Timeline = () => {
   return (
     <Section id="about">
       <SectionTitle>About Me</SectionTitle>
-      <SectionText>
-        Versatile,motivated and passionate about web development. I am looking
-        for an end-of-studies internship to constantly develop my skills and
-        develop professionally as a Full Stack developer.
-      </SectionText>
+
+      <Fade>
+        <SectionText>
+          Versatile,motivated and passionate about web development. I am looking
+          for an end-of-studies internship to constantly develop my skills and
+          develop professionally as a Full Stack developer.
+        </SectionText>
+      </Fade>
       <CarouselContainer ref={carouselRef} onScroll={handleScroll}>
         <>
           {TimeLineData.map((item, index) => (
